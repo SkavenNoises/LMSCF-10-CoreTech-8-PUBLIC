@@ -87,8 +87,10 @@ body {
 
             #content {
                 flex-basis: 78%;
-                height: 500px;
-                background-color: grey;
+                height: 100%;
+                border-radius: 5%;
+                box-shadow: lightgrey;
+
             }
         }
     }
@@ -96,7 +98,7 @@ body {
     footer {
         background-color: #A9D8B8;
         color: white;
-        margin: 1% 0; 
+        margin: 1% 0 0 0; 
 
         display: flex;
         flex-flow: column nowrap;
