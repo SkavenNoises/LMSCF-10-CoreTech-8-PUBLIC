@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Happy Monkey', cursive; 
+}
+
+#wrapping {
+  width: 100%;
+  margin: 0 auto; 
+}
+
+/*Header */
+ 
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; 
+  width: 100%;
+  background-color: #A9D8B8;
+}
+#teamHeader{
+  font-size: 3vw;
+  color:  white;
+  padding: 1vw 2vw;
+}
+  
+nav {
+  background-color: #A9D8B8; 
+}
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end; 
+  padding: 0.5vw 2vw;
+  text-decoration: none; 
+}
+nav li {
+  padding: 1%;
+  list-style: none; 
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 2vw; 
+  margin: 0.5vw;
+}
+/*landing page*/
+
+#landing{
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#heroimage {
+  width: 100%;
+  margin-bottom: 4vw;
+  display: flex;
+  justify-content: center;
+  filter: brightness(50%);
+}
+#heroimage > img {
+  width: 100%
+}
+#teamBox{
+  border: 2px solid white;
+  position: absolute;
+  margin: 0 auto;
+  width: 60%;
+  top:  20%;
+  color: white;
+  display:  flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+H1 {
+  font-size: 4vw;
+}
+
+#teamBlurb {
+  font-size: 2vw;
+}
+
+
+/*footer */
+footer {
+  background-color: black;
+  color: white;
+  margin: 1% 0; 
+}
+footer p {
+  padding: 1%;
+  text-align: center; 
+}
