@@ -37,6 +37,11 @@ body #wrapping header #teamHeader {
   padding: 0.3vw 3vw;
 }
 
+body #wrapping header #teamHeader a {
+  text-decoration: none;
+  color: white;
+}
+
 body #wrapping header nav {
   background-color: #A9D8B8;
 }
@@ -181,7 +186,7 @@ body #wrapping #cards .cardBox .cardImg {
 
 body #wrapping #cards .cardBox .cardName {
   font-size: 3vw;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 

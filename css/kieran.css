@@ -29,6 +29,11 @@ body header #teamHeader {
   padding: 1vw 2vw;
 }
 
+body header #teamHeader a {
+  text-decoration: none;
+  color: white;
+}
+
 body header nav {
   background-color: #A9D8B8;
 }
@@ -93,7 +98,7 @@ body main section #memberCard {
           align-items: center;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  border: 1px solid black;
+  border: 2px solid #A9D8B8;
   border-radius: 5%;
 }
 
@@ -127,6 +132,13 @@ body main section #content {
   border-radius: 5%;
   -webkit-box-shadow: lightgrey;
           box-shadow: lightgrey;
+}
+
+body main section #content hr {
+  background-color: #A9D8B8;
+  width: 95%;
+  height: 1%;
+  color: #A9D8B8;
 }
 
 body footer {

@@ -16,6 +16,11 @@ body {
             font-size: 3vw;
             color:  white;
             padding: 1vw 2vw;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
 
         nav {
@@ -58,7 +63,7 @@ body {
                 align-items: center;
                 flex-basis: 20%;
 
-                border: 1px solid black;
+                border: 2px solid #A9D8B8;
                 border-radius: 5%;
                 
 
@@ -90,6 +95,13 @@ body {
                 height: 100%;
                 border-radius: 5%;
                 box-shadow: lightgrey;
+
+                hr {
+                    background-color: #A9D8B8;
+                    width: 95%;
+                    height: 1%;
+                    color: #A9D8B8;
+                }
 
             }
         }
