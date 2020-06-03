@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Happy Monkey', cursive; 
+
+    #wrapping{
+        width: 100%;
+        margin: 0 auto;
+
+        header {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0; 
+            width: 100%;
+            background-color: #A9D8B8;
+
+            #teamHeader{
+                font-size: 4vw;
+                color:  white;
+                padding: 0.3vw 3vw;
+            }
+
+            nav {
+                background-color: #A9D8B8;
+
+                ul {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-end; 
+                    padding: 0.5vw 2vw;
+                    margin-right: 2vw;
+                    text-decoration: none; 
+
+                    li {
+                        padding: 0.5vw;
+                        list-style: none; 
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 2vw; 
+                            margin: 0.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    /*landing page*/
+        #landing{
+            position: relative;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            #heroimage {
+                width: 100%;
+                margin-bottom: 4vw;
+                display: flex;
+                justify-content: center;
+                filter: brightness(50%);
+
+                #heroimage > img {
+                    width: 100%;
+                }
+            }
+
+            #teamBox {
+                border-radius: 5px;
+	            background-color: rgba(154, 160, 168, 0.37);
+                position: absolute;
+                margin: 0 auto;
+                width: 80%;
+                top:  20%;
+                padding: 1vw;
+                text-align: center;
+                color: white;
+                display:  flex;
+                flex-flow: column nowrap;
+                align-items: center;
+
+                H1 {
+                    font-size: 4vw;
+                }
+
+                #teamBlurb {
+                    font-size: 2vw;
+                }
+
+            }
+        }
+        /*CardHolder*/
+        #cards {
+            border: 2px dotted green; 
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .cardBox{
+                background-color: rgba(154, 160, 168, 0.171);
+                border-radius: 5vw;
+                margin: 1vw 0.2vw;
+                padding: 2vw;
+
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                align-items: center;
+
+                .cardImg {
+                    margin-top: 2%;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    height: 30vw;
+                    width: 30vw;
+                }
+
+                .cardName{
+                    font-size: 3vw;
+                    color: white;
+                    font-weight: bold;
+                }
+
+                .cardGitHub{
+                    font-size: 2vw;
+                    color: #A9D8B8;
+                }
+
+                .cardReadMore{
+                    font-size: 2vw;
+                }
+            }
+
+        }   
+        /*footer */
+        footer {
+            background-color: #A9D8B8;
+            color: white;
+            margin: 1% 0 0 0; 
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+
+            #logo {
+                align-self: flex-end;
+                margin: 2%;
+            }
+
+            p {
+                padding: 1%;
+                text-align: center; 
+            }
+        }
+    }
+} 
