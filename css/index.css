@@ -1,98 +1,222 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Happy Monkey', cursive; 
+  font-family: 'Happy Monkey', cursive;
 }
 
-#wrapping {
+body #wrapping {
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
+  /*landing page*/
+  /*CardHolder*/
+  /*footer */
 }
 
-/*Header */
- 
-header {
+body #wrapping header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0; 
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
   width: 100%;
   background-color: #A9D8B8;
 }
-#teamHeader{
-  font-size: 3vw;
-  color:  white;
-  padding: 1vw 2vw;
+
+body #wrapping header #teamHeader {
+  font-size: 4vw;
+  color: white;
+  padding: 0.3vw 3vw;
 }
-  
-nav {
-  background-color: #A9D8B8; 
+
+body #wrapping header nav {
+  background-color: #A9D8B8;
 }
-nav ul {
+
+body #wrapping header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end; 
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 0.5vw 2vw;
-  text-decoration: none; 
+  margin-right: 2vw;
+  text-decoration: none;
 }
-nav li {
-  padding: 1%;
-  list-style: none; 
+
+body #wrapping header nav ul li {
+  padding: 0.5vw;
+  list-style: none;
 }
-nav a {
+
+body #wrapping header nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 2vw; 
+  font-size: 2vw;
   margin: 0.5vw;
 }
-/*landing page*/
 
-#landing{
+body #wrapping #landing {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#heroimage {
+
+body #wrapping #landing #heroimage {
   width: 100%;
   margin-bottom: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  filter: brightness(50%);
-}
-#heroimage > img {
-  width: 100%
-}
-#teamBox{
-  border: 2px solid white;
-  position: absolute;
-  margin: 0 auto;
-  width: 60%;
-  top:  20%;
-  color: white;
-  display:  flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
-H1 {
+body #wrapping #landing #heroimage #heroimage > img {
+  width: 100%;
+}
+
+body #wrapping #landing #teamBox {
+  border-radius: 5px;
+  background-color: rgba(154, 160, 168, 0.37);
+  position: absolute;
+  margin: 0 auto;
+  width: 80%;
+  top: 20%;
+  padding: 1vw;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #wrapping #landing #teamBox H1 {
   font-size: 4vw;
 }
 
-#teamBlurb {
+body #wrapping #landing #teamBox #teamBlurb {
   font-size: 2vw;
 }
 
-
-/*footer */
-footer {
-  background-color: black;
-  color: white;
-  margin: 1% 0; 
+body #wrapping #cards {
+  border: 2px dotted green;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-footer p {
+
+body #wrapping #cards .cardBox {
+  background-color: rgba(154, 160, 168, 0.171);
+  border-radius: 5vw;
+  margin: 1vw 0.2vw;
+  padding: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #wrapping #cards .cardBox .cardImg {
+  margin-top: 2%;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30vw;
+  width: 30vw;
+}
+
+body #wrapping #cards .cardBox .cardName {
+  font-size: 3vw;
+  color: white;
+  font-weight: bold;
+}
+
+body #wrapping #cards .cardBox .cardGitHub {
+  font-size: 2vw;
+  color: #A9D8B8;
+}
+
+body #wrapping #cards .cardBox .cardReadMore {
+  font-size: 2vw;
+}
+
+body #wrapping footer {
+  background-color: #A9D8B8;
+  color: white;
+  margin: 1% 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #wrapping footer #logo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 2%;
+}
+
+body #wrapping footer p {
   padding: 1%;
-  text-align: center; 
+  text-align: center;
 }

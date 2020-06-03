@@ -13,7 +13,7 @@ class Person {
 
     addCard(){
         document.getElementById("cards").innerHTML += `
-        <div>
+        <div class="cardBox">
             <img class="cardImg" src="${this.imgSrc}" alt="">
                     
             <p class="cardName">${this.firstName} ${this.lastName}</p>
