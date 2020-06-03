@@ -74,6 +74,11 @@ body #wrapping header nav ul li a {
   margin: 0.5vw;
 }
 
+body #wrapping header nav ul li a:hover {
+  font-size: 2.5vw;
+  color: black;
+}
+
 body #wrapping #landing {
   position: relative;
   display: -webkit-box;
@@ -139,7 +144,6 @@ body #wrapping #landing #teamBox #teamBlurb {
 }
 
 body #wrapping #cards {
-  border: 2px dotted green;
   width: 90%;
   margin: 0 auto;
   display: -webkit-box;

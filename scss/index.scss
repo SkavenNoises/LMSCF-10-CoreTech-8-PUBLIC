@@ -48,6 +48,11 @@ body {
                             font-size: 2vw; 
                             margin: 0.5vw;
                         }
+
+                        a:hover {
+                            font-size: 2.5vw;
+                            color: black;
+                        }
                     }
                 }
             }
@@ -98,7 +103,6 @@ body {
         }
         /*CardHolder*/
         #cards {
-            border: 2px dotted green; 
             width: 90%;
             margin: 0 auto;
             display: flex;
