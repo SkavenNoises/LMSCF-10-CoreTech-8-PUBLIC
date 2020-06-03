@@ -14,8 +14,10 @@ class Person {
     addCard(){
         document.getElementById("cards").innerHTML += `
         <div class="cardBox">
-            <img class="cardImg" src="${this.imgSrc}" alt="">
-                    
+            <a href="${this.firstName}.html">
+                <img class="cardImg" src="${this.imgSrc}" alt="">
+            </a>      
+            
             <p class="cardName">${this.firstName} ${this.lastName}</p>
 
             <a class="cardGitHub" href="https://github.com/${this.gitHubUName}">${this.gitHubUName}</a>
