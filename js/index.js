@@ -30,10 +30,10 @@ class Person {
 }
 
 let teamMembers = [
-    new Person("Goran", "Ivkic", "../img/goranpic.jpg", "gogifswd10"),
-    new Person("Kieran", "Mortimer", "../img/kieranpic.jpg", "SkavenNoises"),
-    new Person("Rebecca", "Schedler", "../img/rebecca.jpg", "BeccaSche"),
-    new Person("Onur", "Umar", "../img/onurpic.JPG", "onurumar")
+    new Person("Goran", "Ivkic", "img/goranpic.jpg", "gogifswd10"),
+    new Person("Kieran", "Mortimer", "img/kieranpic.jpg", "SkavenNoises"),
+    new Person("Rebecca", "Schedler", "img/rebecca.jpg", "BeccaSche"),
+    new Person("Onur", "Umar", "img/onurpic.JPG", "onurumar")
 ];
 
 for (let member of teamMembers){
