@@ -76,7 +76,7 @@ body #wrapping header nav ul li a {
 
 body #wrapping header nav ul li a:hover {
   font-size: 2.5vw;
-  color: black;
+  color: #9AA0A8;
 }
 
 body #wrapping #landing {
@@ -105,8 +105,8 @@ body #wrapping #landing #heroimage {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 body #wrapping #landing #heroimage #heroimage > img {
@@ -115,11 +115,11 @@ body #wrapping #landing #heroimage #heroimage > img {
 
 body #wrapping #landing #teamBox {
   border-radius: 5px;
-  background-color: rgba(154, 160, 168, 0.37);
+  background-color: rgba(237, 239, 240, 0.45);
   position: absolute;
   margin: 0 auto;
   width: 80%;
-  top: 20%;
+  top: 15%;
   padding: 1vw;
   text-align: center;
   color: white;
@@ -188,6 +188,10 @@ body #wrapping #cards .cardBox .cardImg {
   width: 30vw;
 }
 
+body #wrapping #cards .cardBox .cardImg:hover {
+  border: 0.6vw solid #BEFFC7;
+}
+
 body #wrapping #cards .cardBox .cardName {
   font-size: 3vw;
   color: black;
@@ -204,7 +208,7 @@ body #wrapping #cards .cardBox .cardReadMore {
 }
 
 body #wrapping footer {
-  background-color: #A9D8B8;
+  background-color: #A7C4B5;
   color: white;
   margin: 1% 0 0 0;
   display: -webkit-box;
@@ -222,10 +226,53 @@ body #wrapping footer {
 body #wrapping footer #logo {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin: 2%;
+  width: 20vw;
+  margin: 3%;
 }
 
 body #wrapping footer p {
   padding: 1%;
   text-align: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  body {
+    width: 100%;
+    font-size: x-small;
+  }
+  body #wrapping header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #wrapping #teamHeader, body #wrapping #logo {
+    display: none;
+  }
+  body #wrapping #cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    font-size: xx-small;
+  }
+  body #wrapping header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #wrapping #teamHeader, body #wrapping #logo {
+    display: none;
+  }
+  body #wrapping #cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
 }

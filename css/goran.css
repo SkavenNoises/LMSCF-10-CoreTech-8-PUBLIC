@@ -67,9 +67,8 @@ body header nav ul li a {
 
 body header nav ul li a:hover {
   font-size: 2.5vw;
-  color: black;
+  color: #9AA0A8;
 }
-
 
 body main section {
   margin: 2%;
@@ -104,8 +103,10 @@ body main section #memberCard {
           align-items: center;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  border: 2px solid #A9D8B8;
+  border: 2px solid #BEFFC7;
   border-radius: 5%;
+  -webkit-box-shadow: 5px 2px 8px #9AA0A8;
+          box-shadow: 5px 2px 8px #9AA0A8;
 }
 
 body main section #memberCard img {
@@ -132,12 +133,13 @@ body main section #memberCard ul {
 }
 
 body main section #content {
-  -ms-flex-preferred-size: 78%;
-      flex-basis: 78%;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
   height: 100%;
-  border-radius: 5%;
+  border-radius: 2%;
   -webkit-box-shadow: lightgrey;
           box-shadow: lightgrey;
+  padding: 2%;
 }
 
 body main section #content hr {
@@ -174,6 +176,56 @@ body footer p {
   text-align: center;
 }
 
-body main section #content h2, body main section #content p {
-  margin: 2%;
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  body {
+    width: 100%;
+    font-size: 2vh;
+  }
+  body #wrapping header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #wrapping #teamHeader, body #wrapping #logo {
+    display: none;
+  }
+  body #wrapping main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body #wrapping main section #memberCard {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    font-size: 2vh;
+  }
+  body #wrapping header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #wrapping #teamHeader, body #wrapping #logo {
+    display: none;
+  }
+  body #wrapping main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body #wrapping main section #memberCard {
+    width: 80%;
+  }
 }
